@@ -1,5 +1,6 @@
 /*
 Patrón Estructural (DAO - Data Access Object): UserDAO proporciona una abstracción para operaciones CRUD con los datos de User.
+Single Responsibility Principle (SRP) –Cada clase tiene una única responsabilidad. Por ejemplo, UserDAO gestiona la persistencia de datos.
 */
 package dal;
 
