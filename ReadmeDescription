@@ -17,6 +17,7 @@ En nuestro ejemplo, las clases DatabaseConnection y UserDAO pertenecen a esta ca
 Es donde se muestran los datos y se recogen las entradas del usuario. En nuestro ejemplo, la clase UserUI pertenece a esta capa.
 
 Principios Solid
+Estas descripciones de igual manera se encuentran comentadas en los respectivos archivos
 ●	S: Single Responsibility Principle (SRP) –Cada clase tiene una única responsabilidad. Por ejemplo, UserDAO gestiona la persistencia de datos y UserService gestiona la lógica de negocio.
 ●	O: Open/Closed Principle (OCP) - Las clases están abiertas para la extensión pero cerradas para la modificación. 
 ●	L: Liskov Substitution Principle (LSP) – No se usó herencia en este ejemplo
