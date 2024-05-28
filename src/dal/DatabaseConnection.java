@@ -1,3 +1,8 @@
+/*
+Patrón Creacional (Singleton): DatabaseConnection implementa el patrón Singleton para asegurar que solo haya una instancia de la conexión a la base de datos.
+*/
+
+
 package dal;
 
 public class DatabaseConnection {
