@@ -1,3 +1,6 @@
+/*
+Patrón de Comportamiento (Observer): UserSubject implementa el patrón Observer para notificar cambios en los datos a los observadores.
+*/
 package bl;
 
 import java.util.ArrayList;
