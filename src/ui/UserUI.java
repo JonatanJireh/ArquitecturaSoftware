@@ -1,3 +1,7 @@
+/*
+D: Dependency Inversion Principle (DIP) – Las capas superiores (UserUI) dependen de abstracciones (UserObserver) y no de implementaciones concretas.
+*/
+
 package ui;
 
 import bl.UserObserver;
