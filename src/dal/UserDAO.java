@@ -1,3 +1,6 @@
+/*
+Patrón Estructural (DAO - Data Access Object): UserDAO proporciona una abstracción para operaciones CRUD con los datos de User.
+*/
 package dal;
 
 import models.User;
