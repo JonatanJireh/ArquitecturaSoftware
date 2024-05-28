@@ -1,1 +1,2 @@
-sicmsj
+Este proyecto es para la gestión de Usuarios con las funcionalidades de crear, actualizar, eliminar y visualizar usuarios. Se utiliza la arquitectura en 3 capas, 
+Patrones de diseño y los principios de SOLID
