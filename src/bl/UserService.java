@@ -1,3 +1,7 @@
+/*
+Single Responsibility Principle (SRP) –Cada clase tiene una única responsabilidad. Por ejemplo, UserService gestiona la lógica de negocio.
+*/
+
 package bl;
 
 import dal.UserDAO;
