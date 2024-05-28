@@ -1,4 +1,31 @@
 Este proyecto es para la gestión de Usuarios con las funcionalidades de crear, actualizar, eliminar y visualizar usuarios. Se utiliza la arquitectura en 3 capas, 
 Patrones de diseño y los principios de SOLID.
 Este proyecto esta desarrollado en Java por lo cual se puede hacer correr en cualquier IDE de este lenguaje, sin embargo se recomienda el uso de NetBeans 17,
-simplemente se debe clonar el repositorio y hacer correr el archivo UserUI.java
+simplemente se debe clonar el repositorio y hacer correr el archivo UserUI.java que se encuentra dentro la carpeta ui.
+
+Este proyecto como mencionamos utiliza la arquitectura de 3 capas, es por eso que en el proyecto podemos ver 3 carpetas muy importantes las cuales son:
+
+-bl(Business Layer) Es la Capa de Lógica de Negocio y se encarga de contener la lógica de negocio de la aplicación. Procesa los datos de entrada, 
+aplica reglas de negocio y coordina la interacción entre la capa de presentación y la capa de acceso a datos. 
+En nuestro ejemplo, las clases UserService, UserSubject, y UserObserver pertenecen a esta capa
+
+-dal(Data Access Layer) Es la Capa de Acceso a Datos y se encarga de gestionar la comunicación con la base de datos.La capa de acceso a datos es responsable 
+de interactuar con la base de datos o cualquier otra fuente de datos. Gestiona la creación, lectura, actualización y eliminación de datos. 
+En nuestro ejemplo, las clases DatabaseConnection y UserDAO pertenecen a esta capa.
+
+-ui(UserInterface) Es la Capa de Presentación que se encarga de la interacción con el usuario. La capa de presentación es responsable de interactuar con el usuario. 
+Es donde se muestran los datos y se recogen las entradas del usuario. En nuestro ejemplo, la clase UserUI pertenece a esta capa.
+
+Principios Solid
+●	S: Single Responsibility Principle (SRP) –Cada clase tiene una única responsabilidad. Por ejemplo, UserDAO gestiona la persistencia de datos y UserService gestiona la lógica de negocio.
+●	O: Open/Closed Principle (OCP) - Las clases están abiertas para la extensión pero cerradas para la modificación. 
+●	L: Liskov Substitution Principle (LSP) – No se usó herencia en este ejemplo
+●	I: Interface Segregation Principle (ISP) –Se utilizan interfaces (UserObserver) para asegurar que las clases no sean forzadas a implementar métodos que no necesitan.
+●	D: Dependency Inversion Principle (DIP) – Las capas superiores (UserUI, UserService) dependen de abstracciones (UserObserver) y no de implementaciones concretas.
+
+
+Patrones de diseño
+Estas descripciones de igual manera se encuentran comentadas en los respectivos archivos
+●	Patrón Creacional (Singleton): DatabaseConnection implementa el patrón Singleton para asegurar que solo haya una instancia de la conexión a la base de datos.
+●	Patrón Estructural (DAO - Data Access Object): UserDAO proporciona una abstracción para operaciones CRUD con los datos de User.
+●	Patrón de Comportamiento (Observer): UserSubject y UserObserver implementan el patrón Observer para notificar cambios en los datos a los observadores.
