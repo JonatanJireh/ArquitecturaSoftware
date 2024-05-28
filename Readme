@@ -1,2 +1,4 @@
 Este proyecto es para la gestión de Usuarios con las funcionalidades de crear, actualizar, eliminar y visualizar usuarios. Se utiliza la arquitectura en 3 capas, 
-Patrones de diseño y los principios de SOLID
+Patrones de diseño y los principios de SOLID.
+Este proyecto esta desarrollado en Java por lo cual se puede hacer correr en cualquier IDE de este lenguaje, sin embargo se recomienda el uso de NetBeans 17,
+simplemente se debe clonar el repositorio y hacer correr el archivo UserUI.java
